@@ -21,10 +21,10 @@
     "./*": {
       "import": "./dist/esm/*.js",
       "types": "./dist/types/*.d.ts"
-    },
+    }
   },
   "peerDependencies": {
-    "hono": "^4.0.0",
+    "hono": "^4.0.0"
   },
   "files": [
     "src",

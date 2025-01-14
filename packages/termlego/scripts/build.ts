@@ -1,11 +1,11 @@
-import { Glob, $ } from "bun";
+import { Glob, $ } from "bun"
 
-await $`rm -rf dist`;
+await $`rm -rf dist`
 
-const files = new Glob("./src/**/*.{ts,tsx}").scan() as AsyncIterable<string>;
-const collectedFiles: string[] = [];
+const files = new Glob("./src/**/*.{ts,tsx}").scan() as AsyncIterable<string>
+const collectedFiles: string[] = []
 for await (const file of files) {
-  collectedFiles.push(file);
+  collectedFiles.push(file)
 }
 
 await Bun.build({
@@ -18,7 +18,7 @@ await Bun.build({
    * instead of building each file individually.
    */
   entrypoints: collectedFiles,
-});
+})
 
 // Generate type declarations
-await $`tsc --outDir dist/types --declaration --emitDeclarationOnly --declarationMap`;
+await $`tsc --outDir dist/types --declaration --emitDeclarationOnly --declarationMap`
