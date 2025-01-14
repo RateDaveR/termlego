@@ -1,0 +1,17 @@
+{
+  "name": "termlego",
+  "module": "index.ts",
+  "type": "module",
+  "worksapces": [
+    "packages/termlego"
+  ],
+  "devDependencies": {
+    "@tsconfig/node22": "22.0.0",
+    "@types/bun": "latest"
+  },
+  "dependencies": {
+    "@changesets/cli": "2.27.10",
+    "prettier": "3.4.2",
+    "typescript": "5.6.3"
+  }
+}

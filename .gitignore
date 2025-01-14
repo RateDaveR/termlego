@@ -1,0 +1,17 @@
+# System files
+.DS_Store
+
+# Temporary files
+*~
+.*.swp
+.swp
+*.log
+
+# IDE and tooling configurations
+.direnv/
+
+dist
+notes
+.nvim.lua
+.env
+/node_modules
